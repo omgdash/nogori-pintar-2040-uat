@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-cream: #FFF9F3;
+    --color-peach: #F4C6A6;
+    --color-pink: #E8B6C8;
+    --color-aqua: #9EDBD7;
+    --color-blue: #A8CDE3;
+    --color-yellow: #F3DB7B;
+    --color-lavender: #C7B9DB;
+    --color-turquoise: #46B7B0;
+    --color-charcoal: #171717;
+    --color-grey: #5F6368;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #FFF9F3;
+    color: #171717;
+  }
+
+  body {
+    background-color: #FFF9F3;
+    color: #171717;
+    overflow-x: hidden;
+  }
+}
+
+/* Subtle Organic Watercolour Blobs */
+.watercolour-blob-1 {
+  background: radial-gradient(circle at 50% 50%, rgba(158, 219, 215, 0.45) 0%, rgba(244, 198, 166, 0.35) 50%, rgba(255, 249, 243, 0) 75%);
+  filter: blur(40px);
+  border-radius: 43% 57% 70% 30% / 30% 45% 55% 70%;
+  pointer-events: none;
+}
+
+.watercolour-blob-2 {
+  background: radial-gradient(circle at 50% 50%, rgba(232, 182, 200, 0.4) 0%, rgba(243, 219, 123, 0.3) 55%, rgba(255, 249, 243, 0) 75%);
+  filter: blur(48px);
+  border-radius: 60% 40% 30% 70% / 55% 30% 70% 45%;
+  pointer-events: none;
+}
+
+.watercolour-blob-3 {
+  background: radial-gradient(circle at 50% 50%, rgba(168, 205, 227, 0.45) 0%, rgba(199, 185, 219, 0.35) 60%, rgba(255, 249, 243, 0) 80%);
+  filter: blur(44px);
+  border-radius: 50% 50% 35% 65% / 40% 60% 40% 60%;
+  pointer-events: none;
+}
+
+/* Card Styling */
+.card-premium {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  border: 1px solid rgba(232, 182, 200, 0.35);
+  box-shadow: 0 4px 20px -2px rgba(23, 23, 23, 0.04), 0 2px 6px -1px rgba(23, 23, 23, 0.02);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-premium:hover {
+  transform: translateY(-2px);
+  border-color: rgba(70, 183, 176, 0.5);
+  box-shadow: 0 12px 28px -4px rgba(23, 23, 23, 0.08), 0 4px 10px -2px rgba(23, 23, 23, 0.03);
+}
+
+/* Leaflet Custom Marker & Cluster Override */
+.leaflet-popup-content-wrapper {
+  border-radius: 16px !important;
+  box-shadow: 0 10px 25px -5px rgba(23, 23, 23, 0.15) !important;
+  border: 1px solid rgba(232, 182, 200, 0.4) !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF9F3;
+}
+::-webkit-scrollbar-thumb {
+  background: #C7B9DB;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #46B7B0;
+}
